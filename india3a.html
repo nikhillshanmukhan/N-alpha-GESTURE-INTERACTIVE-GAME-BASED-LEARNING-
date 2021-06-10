@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+  <title>FingerPose Example</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div>
+      <video id="pose-video" class="layer" playsinline></video>
+      <canvas id="pose-canvas" class="layer"></canvas>
+      <div id="pose-result" class="layer"></div>
+    </div>
+
+  <!-- Video for handtracker -->
+  <div class="tracker">
+      
+    <video id="myvideo"></video>
+    <canvas id="canvas" class="border"></canvas> 
+  </div>
+     <!--   <div id="updatenote"></div> -->
+     
+ <!--button  id="trackbutton" class="button2"disabled onclick="runbabyrun()">Enable Gesture</button-->
+ <body id="trackbutton" onLoad="javascript:runbabyrun()" -->
+
+   <!--button id="baby" class="button2"disabled onclick="runbabyrun()">Enable Gesture</button-->
+   <div class="container">
+   <h1 style="color:rgb(244, 164, 96)">Lvl:3 <br> Score:0/20</h1>
+   <h2  style="color:rgb(25, 56, 67)">..........................................................................</h2>
+    <h1  style="color:rgb(244, 164, 96)">ONE THOUSAND FOUR HUNDRED AND THREE</h1>
+    <button type="buttons" class="button1" id="text-to-speech" onclick="textToAudio()">Speak</button>
+    
+   </div>
+
+
+
+
+  <div class="data">
+    <div class="hand-1">
+      <p id="hand-x">X: <span>0</span></p>
+      <p id="hand-y">Y: <span>0</span></p>
+    </div>
+  </div>
+
+  <div id="nextpage">
+    <a href="india3b.html"> <img src="image/4-2-arrow-free-download-png.png" alt="game logo" style="width:20%"></a>
+  </div>
+
+  <script src="js/three.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs@0.0.13/dist/handtrack.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+    <script src="js/fingerpose.js" type="text/javascript"></script>
+    <script src="india3a.js"></script>
+   
+    
+    
+</body>
+</html>
